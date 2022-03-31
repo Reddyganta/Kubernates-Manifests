@@ -1,0 +1,13 @@
+AccessModes
+===========
+ReadWriteOnce--> volume can be mounted as read-write by single node
+ReadWriteMany--> volume can be mounted as read-write by many node-----> supports nfs
+ReadOnlyMany--> volume can be mounted as read-only by many node
+
+Cliam polocies
+===============
+Retain---> when pvc is deleted. pv will not be deleted 
+Delete----> when we delete  pvc. it will delete pv and also associated external storage such as
+            AWS EBS,GPED, AzureDisk.
+Recycle--->when we delete pvc it will not delete pv. but it will remove datafrom the storage.
+
