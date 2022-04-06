@@ -1,3 +1,5 @@
+Note:-- if you configure the storage class, you will create the PVC(persistent volume claim) directly, claim will create the volume with the help of storage class
+
 AccessModes
 ===========
 ReadWriteOnce--> volume can be mounted as read-write by single node
